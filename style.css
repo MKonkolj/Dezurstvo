@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -border: dotted 1px red;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+html,body {
+    height:100%;
+    min-height:100%;
+}
+
+main {
+    height: 100vh;
+    background-color: rgb(19, 31, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 685px;
+    -border: solid 1px green;
+    box-shadow: 
+        rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    border-radius: 10px;
+}
+
+
+/************************************************/
+/************** Gornja slika ********************/
+
+
+.top-image {
+    width: 400px;
+    height: 250px;
+    background-image: url(images/pexels-photo-129105.jpeg);
+    background-size: 500px;
+    background-position: center;
+    border-radius: 10px 10px 0 0; /* i u .calendar+.container ima isti ovaj border-radius, treba da se poklapaju */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.6) 0 0 5px;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 2.5rem;
+}
+
+h2 {
+    padding-left: 20px;
+    margin-top: -7px;
+    font-weight: 300;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+}
+
+.control {
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: flex;
+    background-color: #fff;
+    width: 50px;
+    height: 25px;
+    color: black;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.control button {
+    padding: 0 6px;
+}
+
+
+/************************************************/
+/************** Donji deo kalendara *************/
+
+
+.calendar {
+    width: 400px;
+    height: 450px;
+    -border: dotted 1px red;
+    border-radius: 10px; /* i u .top-image+.container ima isti ovaj border-radius, treba da se poklapaju */
+    position: relative;
+    top: -15px;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 10px 2px;
+}
+
+.pon-uto-sre {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.pon-uto-sre p {
+    width: 20%;
+    text-align: center;
+}
+
+.dani {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px 12px;
+}
+
+.dan {
+    width: 65px;
+    height: 45px;
+    margin: 5px 5px 10px 5px;
+    border-radius: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 6px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 6px;
+}
+
+.dan:nth-child(6n),
+.dan:nth-child(7n) {
+    display: none;
+}
+
+.padding {
+    visibility: hidden;
+}
+
+/***************************************************/
+/***************** Dani u kalendaru ****************/
+
+
+/***************************************************/
