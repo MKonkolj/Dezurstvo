@@ -2,17 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -border: dotted 1px red;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 html,body {
     height:100%;
-    min-height:100%;
 }
 
 main {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(19, 31, 54);
     display: flex;
     justify-content: center;
@@ -20,9 +18,9 @@ main {
 }
 
 .container {
-    width: 400px;
+    max-width: 370px;
     height: 685px;
-    -border: solid 1px green;
+    margin: 10px 10px 0px 10px;
     box-shadow: 
         rgba(0, 0, 0, 0.4) 0px 2px 4px, 
         rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
@@ -37,7 +35,7 @@ main {
 
 
 .top-image {
-    width: 400px;
+    width: 370px;
     height: 250px;
     background-image: url(images/pexels-photo-129105.jpeg);
     background-size: 500px;
@@ -66,17 +64,57 @@ h2 {
     margin-top: auto;
     margin-bottom: 20px;
     display: flex;
-    background-color: #fff;
-    width: 50px;
     height: 25px;
-    color: black;
-    border-radius: 12px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .control button {
     padding: 0 6px;
+    width: 4rem;
+    height: 1.6rem;
+    cursor: pointer;
+    background: whitesmoke;
+	border: none;
+	outline: inherit;
+    border-radius: 0 10px 10px 0;
+    border-left: 1px solid rgb(197, 197, 197);
+    font-size: 1rem;
+    color: rgb(85, 85, 85);
+}
+
+.control button:nth-child(2) {
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.control button:first-child {
+    margin-right: 0.6rem;
+    padding-bottom: 0.32rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: whitesmoke;
+    background: none;
+    border: none;
+}
+
+.control button:hover {
+    opacity: 0.95;
+    box-shadow: 0px 0px 12px 2px rgba(255,255,255,0.2);
+    transition-delay: 100ms;
+    transition: opacity,box-shadow 200ms;
+}
+
+.control button:first-child:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 38px 4px rgba(252, 252, 252, 0.58);
+}
+
+.control button:active {
+    opacity: 0.7;
 }
 
 
@@ -85,9 +123,8 @@ h2 {
 
 
 .calendar {
-    width: 400px;
+    max-width: 400px;
     height: 450px;
-    -border: dotted 1px red;
     border-radius: 10px; /* i u .top-image+.container ima isti ovaj border-radius, treba da se poklapaju */
     position: relative;
     top: -15px;
@@ -109,25 +146,47 @@ h2 {
 .dani {
     display: flex;
     flex-wrap: wrap;
-    padding: 12px 12px;
+    padding: 12px 3%;
 }
 
 .dan {
-    width: 65px;
-    height: 45px;
-    margin: 5px 5px 10px 5px;
-    border-radius: 10px 0;
+    width: 17.3%;
+    height: 3rem;
+    margin: 1.35% 1.35% 10px 1.35%;
+    border-radius: 1rem 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 6px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    padding: 6px;
+    padding: 4px 8px;
 }
 
-.dan:nth-child(6n),
-.dan:nth-child(7n) {
+.dan:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 12px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 2px;
+    transition-delay: 100ms;
+    transition: box-shadow 200ms;
+}
+
+.oglasnik {
+    font-size: 1.25rem;
+}
+
+.dan p {
+    opacity: 0.4;
+    font-size: 1rem;
+}
+
+.dan:nth-child(6n+1),
+.dan:nth-child(7n+1) {
     display: none;
 }
 
+.dan:last-child {
+    background-image: url(images/money.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 90% 5%;
+}
+
 .padding {
-    visibility: hidden;
+    opacity: 0.4;
 }
 
 /***************************************************/
