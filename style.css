@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 html,body {
