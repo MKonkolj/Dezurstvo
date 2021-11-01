@@ -17,7 +17,7 @@ const allMonths = [
     "Novembar",
     "Decembar",
 ];
-const dezuran = ["Mlađo", "Stefi", "Nidža", "Tamara", "Mirka", "Andrea", "Taša", "Mara", "Mlađo", "Stefi", "Nidža", "Tamara", "Mirka", "Andrea", "Taša", "Mara", "Mlađo", "Stefi", "Nidža", "Tamara", "Mirka", "Andrea", "Taša", "Mara", "Mlađo", "Stefi", "Nidža", "Tamara", "Mirka", "Andrea", "Taša", "Mara", "Mlađo", "Stefi", "Nidža", "Tamara", "Mirka", "Andrea", "Taša", "Mara"];
+const dezuran = ["vikend" ,"vikend", "Mirka", "Lenka", "Mara", "Stefi", "Mladen", "vikend" ,"vikend", "Andi", "Nidža", "Taša", "/", "Stefi", "Stefi" ,"vikend", "Mara", "Mirka", "Lenka","/" , "Mladen", "Andi", "vikend", "Nikola", "Taša", "/", "Mirka", "Stefi", "Mara", "vikend", "Lenka", "Mladen"];
 
 /////////////// Učitavanje kalendara //////////////////
 
