@@ -86,3 +86,8 @@ function controlBtns() {
 
 controlBtns();
 load();
+
+//na refresh dugmetu ostane hover effect
+// može max-width da se smanji za uže uređaje
+//povećati array dežurnih, izbaci undefined kod dužih meseci
+//negde se gube dani, ne izbaci samo 6 i 7 dan već i neke druge u toku nedelje
